@@ -43,6 +43,13 @@ class _homeState extends State<home> {
         ),
         centerTitle: true,
         elevation: 0.0,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.more_vert),
+            onPressed: () {
+            },
+          ),
+        ],
       ),
       body: ListView(
         children: [
@@ -100,46 +107,46 @@ class _homeState extends State<home> {
                                   ),
                                 ),
                               ),
-                              Positioned(
-                                bottom: 20,
-                                child: Card(
-                                  elevation: 5,
-                                  color: Colors.white,
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(12)),
-                                  child: Container(
-                                    alignment: Alignment.bottomCenter,
-                                    height: height * 0.22,
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: Width * 0.7,
-                                          child: Text(
-                                            snapshot
-                                                .data!.articles![index].title
-                                                .toString(),
-                                            maxLines: 2,
-                                            overflow: TextOverflow.ellipsis,
-                                            style: GoogleFonts.poppins(
-                                                fontSize: 17,
-                                                fontWeight: FontWeight.bold),
-                                          ),
-                                        ),
-                                        Spacer(),
-                                        Container(
-                                          child: Row(
-                                            children: [],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              )
+                              // Positioned(
+                              //   bottom: 20,
+                              //   child: Card(
+                              //     elevation: 5,
+                              //     color: Colors.white,
+                              //     shape: RoundedRectangleBorder(
+                              //         borderRadius: BorderRadius.circular(12)),
+                              //     child: Container(
+                              //       alignment: Alignment.bottomCenter,
+                              //       height: height * 0.22,
+                              //       child: Column(
+                              //         mainAxisAlignment:
+                              //             MainAxisAlignment.center,
+                              //         crossAxisAlignment:
+                              //             CrossAxisAlignment.center,
+                              //         children: [
+                              //           Container(
+                              //             width: Width * 0.7,
+                              //             child: Text(
+                              //               snapshot
+                              //                   .data!.articles![index].title
+                              //                   .toString(),
+                              //               maxLines: 2,
+                              //               overflow: TextOverflow.ellipsis,
+                              //               style: GoogleFonts.poppins(
+                              //                   fontSize: 17,
+                              //                   fontWeight: FontWeight.bold),
+                              //             ),
+                              //           ),
+                              //           Spacer(),
+                              //           Container(
+                              //             child: Row(
+                              //               children: [],
+                              //             ),
+                              //           ),
+                              //         ],
+                              //       ),
+                              //     ),
+                              //   ),
+                              // )
                             ],
                           ),
                         );
